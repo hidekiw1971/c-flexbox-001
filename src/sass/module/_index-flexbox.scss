@@ -1,0 +1,20 @@
+@use "global" as *;
+
+ul.index-group {
+    // display: flex;
+    display: -webkit-box;
+    flex-wrap: wrap;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+li.index-list {
+    flex-basis: 50%;
+
+    @include mq(md) {
+        flex-basis: 25%;
+        // 
+    }
+}

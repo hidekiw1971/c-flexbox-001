@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.swiper-card {
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 20, 147, 1);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.swiper-card-image {
+    padding-top: 65%;
+    position: relative;
+    overflow: hidden;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.swiper-card-image>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+}
